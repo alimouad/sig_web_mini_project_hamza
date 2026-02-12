@@ -1,0 +1,241 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+     font-family: 'arial', sans-serif;
+}
+
+.nav_bar {
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    max-width: 1200px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(#fff);
+    border-radius: 16px;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.nav_bar:hover {
+    box-shadow: 0 10px 30px -5px rgba(99, 102, 241, 0.2);
+}
+
+.nav_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* --- Logo & Titre --- */
+.logo_section h1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    font-size: 0.85rem;
+    margin-top: 2px;
+}
+
+/* --- Badge Hamza --- */
+.created_by {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 6px 12px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    text-align: right;
+}
+
+
+.created_by span {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.author_name {
+    color: #fff;    
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+/* --- Map Container --- */
+#map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.legend {
+    background: white;
+    padding: 10px 15px;
+    line-height: 20px;
+    color: #333;
+    border-radius: 8px;
+    font-family: 'arial', sans-serif;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    font-size: 14px;
+}
+
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.8;
+    border-radius: 4px;
+}
+
+
+
+/* leaflet-styling */
+.leaflet-container {
+    font-family: "arial", sans-serif !important;
+}
+
+
+
+
+/* leaflet styling */
+.leaflet-routing-container {
+    display: none;
+}
+
+.leaflet-control-layers {
+    overflow: auto;
+}
+
+
+.leaflet-touch .leaflet-bar button {
+    width: 40px;
+    height: 40px;
+}
+
+.leaflet-control-layers label {
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+
+.leaflet-popup-content-wrapper {
+    padding: 10px 4px;
+}
+
+.leaflet-popup-content {
+    font-size: 16px;
+}
+
+.leaflet-popup-content p span {
+    font-weight: bold;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+    border: 2px solid #222;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 12px;
+    right: 3px;
+    top: 2px;
+    font-size: 22px;
+}
+
+.leaflet-control-coord-projection.leaflet-control {
+    font-size: 18px;
+}
+
+.leaflet-control-coord-projection {
+    background-color: #fff !important;
+    color: #6366f1 !important;
+    /* color: #fff !important; */
+    font-weight: 400 !important;
+    border-radius: 16px !important;
+    padding: 8px 20px !important;
+}
+
+.leaflet-pm-toolbar .control-icon {
+    width: 83%;
+}
+
+.leaflet-buttons-control-button,
+.leaflet-measure-toggle {
+    width: 38px !important;
+    height: 38px !important;
+}
+
+.leaflet-control-layers-list input[type="radio"],
+input[type="checkbox"] {
+    margin: 2px;
+}
+
+.leaflet-top.leaflet-left a,
+.leaflet-top.leaflet-left button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.leaflet-control-attribution a {
+    text-decoration: none;
+    display: none;
+}
+
+.leaflet-touch .leaflet-bar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    /* border-radius: 2px; */
+}
+
+.leaflet-control-layers-list {
+    width: 200px;
+    right: -2px;
+    padding: 12px;
+    height: auto;
+    background-color: #222;
+    color: #fff;
+}
+
+.leaflet-touch .leaflet-bar .leaflet-measure-action a {
+    display: block;
+    width: auto;
+}
+
+/* .leaflet-touch .leaflet-draw-toolbar a {
+    background-position: 23px 2px;
+} */
+.fa.fa-layer-group {
+    color: #0078A8;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

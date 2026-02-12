@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Web SIG</title>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <link rel="stylesheet" href="./resources/L.Control.Locate.css">
+    <link rel="stylesheet" href="./resources/leaflet.measure.css">
+    <link rel="stylesheet" href="web_sig.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-measure/dist/leaflet-measure.css" />
+    <link rel="stylesheet" href="./resources/leaflet.legend.css">
+    <link rel="stylesheet" href="https://unpkg.com/@geoman-io/leaflet-geoman-free@latest/dist/leaflet-geoman.css" />
+
+
+
+
+</head>
+
+<body>
+    <nav class="nav_bar">
+        <div class="nav_content">
+            <div class="logo_section">
+                <h1>GeoPortal <span>Platform</span></h1>
+                <p class="subtitle">SIG Web Interactif</p>
+            </div>
+
+            <div class="created_by">
+                <span>Propulsé par</span>
+                <a href="https://www.linkedin.com/in/hamza-ibaararen-994a15268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="author_name">Hamza Ibaararen</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="map"></div>
+
+
+
+
+
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- jsPDF pour export PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="https://unpkg.com/@geoman-io/leaflet-geoman-free@latest/dist/leaflet-geoman.min.js"></script>
+    <!-- Plugins Leaflet -->
+    <script src="https://unpkg.com/leaflet-measure/dist/leaflet-measure.min.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="./resources/leaflet.browser.print.min.js"></script>
+    <script src="./resources/L.Control.Locate.js"></script>
+    <script src="./resources/leaflet.legend.js"></script>
+    <script src="./resources/leaflet.measure.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="web_sig.js"></script>
+
+</body>
+
+</html>
