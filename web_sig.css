@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:600');
 
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-   
+}
+body{
+    font-family: 'poppins';
+    font-size: 1rem;
+    overflow: hidden;
 }
 
-body {
-     font-family: 'arial', sans-serif;
-}
 
 .nav_bar {
     color: #fff;
@@ -91,7 +93,7 @@ body {
     line-height: 20px;
     color: #333;
     border-radius: 8px;
-    font-family: 'arial', sans-serif;
+    font-family: 'poppins', sans-serif;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     font-size: 14px;
 }
@@ -109,7 +111,7 @@ body {
 
 /* leaflet-styling */
 .leaflet-container {
-    font-family: "arial", sans-serif !important;
+    font-family: "poppins", sans-serif !important;
 }
 
 
