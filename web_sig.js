@@ -108,6 +108,29 @@ let options = {
 // Add the control to the map
 let browserControl = L.control.browserPrint(options).addTo(myMap);
 
+myMap.on("browser-print-start", function (e) {
+
+    const title = document.createElement("div");
+    title.innerHTML = "Geo Map"; 
+
+    title.classList.add('title_style');
+
+    e.printMap.getContainer().appendChild(title);
+
+    // ===== LEGEND =====
+    const legendClone = legend.getContainer().cloneNode(true);
+
+    legendClone.style.position = "absolute";
+    legendClone.style.bottom = "120px";
+    legendClone.style.left = "20px";
+    legendClone.style.background = "white";
+    legendClone.style.padding = "10px";
+
+    e.printMap.getContainer().appendChild(legendClone);
+});
+
+
+
 
 // Draw control/////////////
 myMap.pm.addControls({

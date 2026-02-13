@@ -86,6 +86,20 @@ body{
     z-index: 1;
 }
 
+.title_style{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    color: #fff;
+    padding: 12px;
+    border-radius:12px ;
+    font-size: 1.5rem;
+    background-color: #222;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
 
 .legend {
     background: white;
@@ -106,6 +120,22 @@ body{
     opacity: 0.8;
     border-radius: 4px;
 }
+@media print {
+  .legend {
+    background: white !important;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+    @page {
+    margin: 0;
+  }
+
+  body {
+    margin: 0;
+  }
+}
+
+
 
 
 
